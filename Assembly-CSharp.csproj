@@ -64,8 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FollowCalm.cs" />
-    <Compile Include="Assets\Slingshot.cs" />
+    <Compile Include="Assets\_Scripts\Cloud.cs" />
+    <Compile Include="Assets\_Scripts\CloudCrafter.cs" />
+    <Compile Include="Assets\_Scripts\FollowCalm.cs" />
+    <Compile Include="Assets\_Scripts\Slingshot.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Unity/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
