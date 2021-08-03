@@ -67,6 +67,7 @@
     <Compile Include="Assets\_Scripts\Cloud.cs" />
     <Compile Include="Assets\_Scripts\CloudCrafter.cs" />
     <Compile Include="Assets\_Scripts\FollowCalm.cs" />
+    <Compile Include="Assets\_Scripts\ProjectileLine.cs" />
     <Compile Include="Assets\_Scripts\RigitbodySleep.cs" />
     <Compile Include="Assets\_Scripts\Slingshot.cs" />
     <Reference Include="UnityEngine">
