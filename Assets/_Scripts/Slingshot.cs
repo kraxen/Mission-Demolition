@@ -90,6 +90,8 @@ public class Slingshot : MonoBehaviour
             projectileRigitbody.velocity = -mouseDelta * velocityMult;
             FollowCalm.POI = projectile;
             projectile = null;
+            MissionDemolition.ShortFired();
+            ProjectileLine.S.poi = projectile;
         }
     }
     //// Start is called before the first frame update
