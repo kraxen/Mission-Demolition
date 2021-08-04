@@ -64,13 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Scripts\Cloud.cs" />
-    <Compile Include="Assets\_Scripts\CloudCrafter.cs" />
-    <Compile Include="Assets\_Scripts\FollowCalm.cs" />
-    <Compile Include="Assets\_Scripts\Goal.cs" />
-    <Compile Include="Assets\_Scripts\ProjectileLine.cs" />
-    <Compile Include="Assets\_Scripts\RigitbodySleep.cs" />
-    <Compile Include="Assets\_Scripts\Slingshot.cs" />
+    <Compile Include="Assets\_Scripts\MissionDemolition.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Unity/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
