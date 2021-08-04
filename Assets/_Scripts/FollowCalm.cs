@@ -12,7 +12,7 @@ public class FollowCalm : MonoBehaviour
 
     [Header("Set Dynamically")]
     public float camZ; //Желаемая координата Z камеры
-    
+
 
     private void Awake()
     {
@@ -28,7 +28,7 @@ public class FollowCalm : MonoBehaviour
 
         Vector3 destination;
         // Если нет интересующего объекта, вернуть p:[0,0,0]
-        if(POI == null)
+        if (POI == null)
         {
             destination = Vector3.zero;
         }
@@ -40,7 +40,7 @@ public class FollowCalm : MonoBehaviour
             if (POI.tag == "Projectile")
             {
                 // Если он стоит на месте (то есть не двигается)
-                if(POI.GetComponent<Rigidbody>().IsSleeping())
+                if (POI.GetComponent<Rigidbody>().IsSleeping())
                 {
                     // Вернуть исходные настройки поля зрения камеры в следующем кадре
                     POI = null;
@@ -64,12 +64,12 @@ public class FollowCalm : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

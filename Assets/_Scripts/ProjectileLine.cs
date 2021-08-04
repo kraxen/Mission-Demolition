@@ -12,7 +12,7 @@ public class ProjectileLine : MonoBehaviour
     private GameObject _poi;
     private List<Vector3> points;
 
-    
+
     public GameObject poi
     {
         get
@@ -75,7 +75,7 @@ public class ProjectileLine : MonoBehaviour
             // Если точка недостаточно далека от предыдущей, просто выйти
             return;
         }
-        if(points.Count == 0)
+        if (points.Count == 0)
         {
             // Если это точка запуска
             Vector3 launchPosDiff = pt - Slingshot.LAUNCH_POS; // Для определения
@@ -101,12 +101,12 @@ public class ProjectileLine : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(poi == null)
+        if (poi == null)
         {
             //Если свойство poi содержит пустое значение, найти интересующий объект
-            if(FollowCalm.POI != null)
+            if (FollowCalm.POI != null)
             {
-                if(FollowCalm.POI.tag == "Projectile")
+                if (FollowCalm.POI.tag == "Projectile")
                 {
                     poi = FollowCalm.POI;
                 }
@@ -122,7 +122,7 @@ public class ProjectileLine : MonoBehaviour
         }
         // Если интересующий объект найден, попытаться добавить точку с его координатами в каждом fixedUpdate
         AddPoint();
-        if( FollowCalm.POI == null)
+        if (FollowCalm.POI == null)
         {
             // Если FollowCalm.POI содержит null, записать null в poi
             poi = null;
@@ -132,12 +132,12 @@ public class ProjectileLine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

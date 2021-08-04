@@ -23,7 +23,7 @@ public class CloudCrafter : MonoBehaviour
         GameObject anchor = GameObject.Find("CloudAnchor");
         // Создать в цикле заданное количество облаков
         GameObject cloud;
-        for (int i=0; i < numClouds; i++)
+        for (int i = 0; i < numClouds; i++)
         {
             // Создать экземпляр cloudPerfab
             cloud = Instantiate<GameObject>(CloudPerfab);
@@ -51,14 +51,14 @@ public class CloudCrafter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         // Обойти в цикле все созданные облака
-        foreach(GameObject cloud in cloudInstances)
+        foreach (GameObject cloud in cloudInstances)
         {
             // Получить масштаб и координаты облака
             float scaleVal = cloud.transform.localScale.x;
@@ -66,7 +66,7 @@ public class CloudCrafter : MonoBehaviour
             // Увеличить скорость для ближних облаков
             cPos.x -= scaleVal * Time.deltaTime * cloudSpeedMult;
             // Если облако сместилось слишком далеко влево...
-            if(cPos.x <= cloudPosMin.x)
+            if (cPos.x <= cloudPosMin.x)
             {
                 // Переместить его далеко вправо
                 cPos.x = cloudPosMax.x;

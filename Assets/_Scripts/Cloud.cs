@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Класс, который создает облако
+/// </summary>
 public class Cloud : MonoBehaviour
 {
     [Header("Set in Inspector")]
@@ -60,7 +64,7 @@ public class Cloud : MonoBehaviour
     void Restart()
     {
         // Удалить старые сферы, составляющие облако
-        foreach(GameObject sp in spheres)
+        foreach (GameObject sp in spheres)
         {
             Destroy(sp);
         }

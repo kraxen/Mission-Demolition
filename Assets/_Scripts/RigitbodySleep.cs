@@ -14,6 +14,6 @@ public class RigitbodySleep : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

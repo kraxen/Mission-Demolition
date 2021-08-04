@@ -73,7 +73,7 @@ public class Slingshot : MonoBehaviour
 
         // Ограничить mouseDelta радиусом коллайдера объекта Slingshot
         float maxMagnitude = this.GetComponent<SphereCollider>().radius;
-        if(mouseDelta.magnitude > maxMagnitude)
+        if (mouseDelta.magnitude > maxMagnitude)
         {
             mouseDelta.Normalize();
             mouseDelta *= maxMagnitude;
@@ -82,7 +82,7 @@ public class Slingshot : MonoBehaviour
         // Передвинуть снаряд в новую позицию
         Vector3 projPos = launchPos + mouseDelta;
         projectile.transform.position = projPos;
-        if(Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0))
         {
             // Кнопка мыши нажата
             aimingMode = false;
